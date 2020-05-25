@@ -1,3 +1,5 @@
+![demo](./image/demo.gif)
+
 ## Ejemplo en Elm: Lista de cosas para hacer
 
 La idea es tener una interfaz de usuario utilizando el paradigma funcional, donde tenemos una lista de cosas para hacer y queremos
