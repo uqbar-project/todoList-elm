@@ -8,7 +8,7 @@ module Main exposing (main)
 
 import Browser
 import Html exposing (Html, br, button, div, h1, input, span, text)
-import Html.Attributes exposing (class, placeholder, value)
+import Html.Attributes exposing (placeholder, value)
 import Html.Events exposing (onClick, onInput)
 import List.Extra exposing (remove)
 import Styles exposing (defaultFontFamily, defaultInput, defaultMargin, primaryButton, styleList, styleRow)
