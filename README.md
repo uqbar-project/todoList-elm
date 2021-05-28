@@ -1,4 +1,4 @@
-![demo](./image/demo.gif)
+![demo](./image/demo2021.gif)
 
 ## Ejemplo en Elm: Lista de cosas para hacer
 
