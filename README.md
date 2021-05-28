@@ -7,6 +7,22 @@ La idea es tener una interfaz de usuario utilizando el paradigma funcional, dond
 - poder agregar una nueva tarea
 - eliminar una tarea que ya hicimos.
 
+## Cómo ejecutar este ejemplo
+
+- Instalar Elm siguiendo [estos pasos](https://guide.elm-lang.org/install/elm.html)
+- Luego en Git Bash o la línea de comandos:
+
+```bash
+npm install
+elm reactor
+```
+
+y luego abrís un navegador en `http://localhost:8000/src/Main.elm`.
+
+## Para editarlo
+
+Recomendamos hacerlo desde [Visual Studio Code](https://code.visualstudio.com/), con el plugin `elmtooling.elm-ls-vscode`.
+
 ## La filosofía de trabajo de Elm
 
 Elm necesita separar 
@@ -33,9 +49,9 @@ view model =
     div []
         ...
         , div []
-            (List.map
-                taskView
-                model.tareas
+            (List.map         -- transformación
+                taskView         -- a un componente visual que muestra las tareas
+                model.tareas     -- de una lista de tareas
             )
 ```
 
@@ -108,11 +124,3 @@ Cada vez que se genera un nuevo estado, se invoca la función view que muestra e
 - https://elmprogramming.com/
 - https://elm-lang.org/examples
 
-## Cómo ejecutar este ejemplo
-
-```bash
-npm install
-elm reactor
-```
-
-y luego abrís un navegador en `http://localhost:8000/src/Main.elm`.
