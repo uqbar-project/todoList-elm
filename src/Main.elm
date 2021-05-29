@@ -46,7 +46,7 @@ init =
 
 
 type Msg
-    = AgregarTarea String
+    = AgregarTarea
     | EliminarTarea String
     | ActualizarTarea String
 
@@ -54,8 +54,8 @@ type Msg
 update : Msg -> Model -> Model
 update msg model =
     case msg of
-        AgregarTarea tarea ->
-            { tareas = model.tareas ++ [ tarea ], nuevaTarea = "" }
+        AgregarTarea ->
+            { tareas = model.tareas ++ [ model.nuevaTarea ], nuevaTarea = "" }
 
         EliminarTarea tarea ->
             { tareas = remove tarea model.tareas, nuevaTarea = "" }
@@ -79,7 +79,7 @@ view model =
             )
         , br [] []
         , input (defaultInput ++ [ placeholder "Descripción de la tarea", value model.nuevaTarea, onInput ActualizarTarea ]) [ ]
-        , button (primaryButton ++ [ onClick (AgregarTarea model.nuevaTarea) ]) [ text "Agregar tarea" ]
+        , button (primaryButton ++ [ onClick AgregarTarea ]) [ text "Agregar tarea" ]
         ]
 
 
