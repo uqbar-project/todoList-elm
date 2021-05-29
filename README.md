@@ -1,5 +1,9 @@
 ![demo](./image/demo2021.gif)
 
+## Diapositivas
+
+[Link a las diapositivas](https://docs.google.com/presentation/d/16L1Iin6Au1CHNSr7QXFxIn3b0kAHzMgfo4mediIHRbg/edit)
+
 ## Ejemplo en Elm: Lista de cosas para hacer
 
 La idea es tener una interfaz de usuario utilizando el paradigma funcional, donde tenemos una lista de cosas para hacer y queremos
